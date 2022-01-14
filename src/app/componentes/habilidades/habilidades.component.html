@@ -1,0 +1,16 @@
+<!-- Seccion Habilidades  grupo de tarjetas-->
+<div class="px-3 py-2 bg-dark text-white">
+  <div class="container-fluid">
+    <h5 style="text-align: center;">Habilidades</h5>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-4" style="margin: .1em;">
+  <div class="card" *ngFor="let habilidades of habilidadesList">
+    <img [src]="habilidades.foto" class="card-img-top" alt="..." style="border-radius: 50%;">
+    <div class="card-body">
+      <h5 class="card-title">{{habilidades.nombre}}</h5>
+      <p class="card-text" style="text-align: justify;">...</p>
+    </div>
+  </div>
+</div>
